@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esto puede mejorar el rendimiento al establecer la conexión de red de antemano, lo que puede acelerar la carga de recursos." />
+    <link rel="preload" href="assets/fonts/static/Karla-Bold.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/static/Karla-Regular.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="canonical" href="https://formos.netlify.app/" />
+    <meta name="theme-color" content="#dff1e7" />
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="forms, desing forms, Contact form, Frontend Mentor Contact form, frontend mentor" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Form Contact" />
+    <meta name="twitter:site" content="@OsmarPerera" />
+    <meta name="twitter:creator" content="@OsmarPerera" />
+    <meta name="twitter:title" content="Forms Contact Chanllenge Frontend Mentor" />
+    <meta name="twitter:description" content="A small form contact of frontend mentor work in SASS, HTML and TS" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/dmfvghaamqjt9lrx43ql.jpg" />
+
+    <!-- Open Graph data -->
+    <meta property="og:image" content="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/dmfvghaamqjt9lrx43ql.jpg" />
+    <meta property="og:title" content="Form Contact" />
+    <meta property="og:description" content="A small form contact of frontend mentor work in SASS, HTML and TS" />
+    <meta property="og:url" content="https://formos.netlify.app/" />
+    <meta property="og:site_name" content="Form Contact" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Indexing instructions for search engines -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Microsoft application configuration -->
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">Contact Us</h1>
+      <form class="form">
+        <div class="form__row">
+          <div class="form__item">
+            <label class="form__label" for="name"> First Name</label>
+            <input type="text" name="name" class="form__input" id="name" />
+            <span class="form__alert">This field is required</span>
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="last"> Last Name</label>
+            <input type="text" name="last" class="form__input" id="last" />
+            <span class="form__alert">This field is required</span>
+          </div>
+        </div>
+
+        <div class="form__item form__item--only">
+          <label class="form__label" for="email"> Email Address</label>
+          <input type="email" name="email" class="form__input" id="email" />
+          <span class="form__alert">This field is required</span>
+        </div>
+
+
+        <div class="form__row--mb-1">
+          <label class="form__label" for="type"> Query Type</label>
+          <div class="form__row form__row--mb-0">
+            <input class="form__radio" value="General Enquiry" type="radio" name="Enquiry" id="Enquiry" />
+            <label for="Enquiry" class="form__item form__item--check">
+              <div class="form__circle"></div>
+              <p class="form__radio-value">General Enquiry</p>
+            </label>
+            <input class="form__radio" value="Support Request" type="radio" name="Support" id="Support" />
+            <label for="Support" class="form__item form__item--check">
+              <div class="form__circle"></div>
+              <p class="form__radio-value">Support Request</p>
+            </label>
+          </div>
+          <span class="form__alert"> Please select a query type</span>
+        </div>
+
+        <div class="form__item form__input--only">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__area" name="message" id="message"></textarea>
+          <span class="form__alert"> This field is required</span>
+        </div>
+
+        <div class="form__terms">
+          <div class="form__terms--items">
+            <input type="checkbox" name="terms" id="terms" />
+            <div class="form__terms--cube">
+              <img src="assets/images/icon-checkbox-check.svg" alt="">
+            </div>
+            <label for="terms" class="form__label form__label--terms"> I consent to being contacted by the team</label>
+          </div>
+          <p class="form__alert ">
+            To submit this form, please consent to being contacted</p
+          >
+        </div>
+
+        <input type="submit" class="form__submit" value="Submit" />
+      </form>
+    </main>
+
+    <div class="alert">
+      <div class="alert__heading">
+        <img
+          class="alert__image"
+          src="assets/images/icon-success-check.svg"
+          alt="icon of check"
+        />
+        <p class="alert__title">Message Sent!</p>
+      </div>
+      <p class="alert__text">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
