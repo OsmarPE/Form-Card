@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100dvh;
+  overflow-y: auto;
 }
 @media screen and (width >= 768px) {
   body {
@@ -87,9 +88,9 @@ input, textarea {
 
 .main {
   background-color: var(--color-white-100);
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 720px;
   width: 90%;
   margin: 2rem auto 0;
   box-shadow: 0 0 33px hsla(186, 15%, 59%, 0.103);
@@ -169,6 +170,7 @@ input, textarea {
   color: var(--color-green-300);
   display: inline-block;
   margin-bottom: 0.5rem;
+  font-size: 0.875rem;
 }
 .form__label::after {
   content: " * ";

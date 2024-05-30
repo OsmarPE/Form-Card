@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content: center;
     min-height: 100dvh;
+    overflow-y: auto;
     @include table(){
         align-items: center;
     }
@@ -93,9 +94,9 @@ input,textarea{
 
 .main{
     background-color: var(--color-white-100);
-    padding: 1.5rem;
+    padding: 1.75rem;
     border-radius: 12px;
-    max-width: 700px;
+    max-width: 720px;
     width: 90%;
     margin: 2rem auto 0;
     box-shadow: 0 0 33px hsla(186, 15%, 59%, 0.103);
@@ -179,6 +180,7 @@ input,textarea{
         }
         display: inline-block;
         margin-bottom: .5rem;
+        font-size: .875rem;
         &--terms{
             margin: 0;
         }
